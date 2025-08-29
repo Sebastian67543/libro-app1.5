@@ -1,0 +1,53 @@
+# ======================
+# Java / Gradle
+# ======================
+.gradle/
+build/
+out/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code (por si alguien lo usa también)
+.vscode/
+
+# Sistema operativo (macOS, Windows, Linux)
+.DS_Store
+Thumbs.db
+
+# Archivos de log / temporales
+*.log
+*.tmp
+*.swp
+
+# Archivos de configuración local
+.env
+*.local
+
+# Archivos de compilación
+*.class
+*.jar
+*.war
+*.ear
+
+# Archivos de caché
+*.lock
+.cache/
+
+# Test outputs
+test-output/
+target/
+
+# Coverage tools
+jacoco.exec
+coverage/
+
+# Backup files
+*.bak
+*~
+
+# Reports (opcionales)
+build/reports/
