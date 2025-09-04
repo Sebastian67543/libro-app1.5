@@ -40,13 +40,14 @@ public class LibroController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Libro> update(@PathVariable int id, @RequestBody Libro libro){
-        Libro libroActualizado = libroService.update(id, id, libro);
+    public ResponseEntity<Libro> update(@PathVariable int id, @RequestBody Libro libro) {
+        Libro libroActualizado = libroService.update(id, libro); // solo pasamos id y libro
         if (libroActualizado == null){
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(libroActualizado);
     }
+
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable int id){

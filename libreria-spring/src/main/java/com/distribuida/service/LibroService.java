@@ -7,13 +7,15 @@ import java.util.List;
 
 public interface LibroService {
 
-    public List<Libro> findAll();
+    List<Libro> findAll();
 
-    public Libro findOne(int id);
+    Libro findOne(int id);
 
-    public Libro save(Libro libro);
+    Libro save(Libro libro);
 
-    public Libro update(int id, int idlibro, Libro libro);
+    // Solo se pasa el id del libro y el objeto completo
+    Libro update(int idLibro, Libro libro);
 
-    public void delete(int id);
+    void delete(int id);
 }
+
